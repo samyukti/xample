@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "An Example Single Page App",
   "main": "index.js",
+  "private": true,
   "scripts": {
+    "dev": "webpack-dev-server --content-base public/",
+    "prod": "webpack --config webpack.prod.config.js",
+    "browse": "light-server -s ./public -p 7000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
