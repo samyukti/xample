@@ -45,6 +45,9 @@ module.exports = {
   },
   plugins: [
     new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
       riot: 'riot'
     }),
     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor-[hash].js'),
